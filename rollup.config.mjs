@@ -102,7 +102,9 @@ const bundleDependency = (
         },
       },
     }),
-    commonjs(),
+    commonjs({
+      transformMixedEsModules: true,
+    }),
     json(),
     nodeResolve(),
   ],
