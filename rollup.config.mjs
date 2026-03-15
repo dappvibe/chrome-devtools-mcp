@@ -126,8 +126,7 @@ export default [
         return true;
       }
 
-      const existingExternals = ['./bidi.js', '../bidi/bidi.js'];
-      if (existingExternals.includes(source)) {
+      if (source.endsWith('bidi.js')) {
         return true;
       }
 
